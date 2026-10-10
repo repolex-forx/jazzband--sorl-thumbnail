@@ -1,0 +1,11 @@
+{
+  "org": "jazzband",
+  "repo": "sorl-thumbnail",
+  "versions": [
+    {
+      "commit": "2c0b550cd70820b58d909fd3b1a57093c196317e",
+      "tag": "",
+      "parsed_at": "2026-10-10T19:44:14.651158+00:00"
+    }
+  ]
+}

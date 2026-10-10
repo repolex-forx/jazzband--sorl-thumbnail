@@ -1,1 +1,186 @@
-Initializing
+# Repolex Knowledge Graph of jazzband/sorl-thumbnail
+
+RDF knowledge graph data for [jazzband/sorl-thumbnail](https://github.com/jazzband/sorl-thumbnail), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download jazzband/sorl-thumbnail
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 2c0b550cd70820b58d909fd3b1a57093c196317e
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 2c0b550cd70820b58d909fd3b1a57093c196317e
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 02fa90d4c5f0f7904e7a02427236cd9fde372738.nq.gz
+│   ├── 03b0379d0427e0c773cb181a8567aecd49f53747.nq.gz
+│   ├── 0448549b494ca83b3082fbb87a169e6658ae964c.nq.gz
+│   ├── 04905a110bbabd9690c05612b4ecb9d0bbe02df4.nq.gz
+│   ├── 05bdd24fb61c55dc49ed9d3dcbfa8be6eb470f3d.nq.gz
+│   ├── 080c77238479c7f7bb14ce22905df6e002f77532.nq.gz
+│   ├── 0a304be95135cd72cd9c2fdb5b925974dbc249b1.nq.gz
+│   ├── 0feb9759819d054381092b7555518a23c86ac087.nq.gz
+│   ├── 1118f7e99dc168dc00ea4d0900531654277469cf.nq.gz
+│   ├── 147525e2c2b1655a720407fe416513d7de22e409.nq.gz
+│   ├── 16baaedbdb0e8af0de4a967557ee825f0d2520fa.nq.gz
+│   ├── 17afdee3462e8095f8ff1ca14168f7fdad5f8e96.nq.gz
+│   ├── 19c447aab3dd9887fbcfb646676d44069a6acb48.nq.gz
+│   ├── 1cbb227e4be972af7f49ebd2b4780e73c55e5e09.nq.gz
+│   ├── 1cc40044646bb73870088ddc88543c58a3ca083e.nq.gz
+│   ├── 1f82838cca2a47fa60269828ae2ef57bef6dc835.nq.gz
+│   ├── 211656c68269347ade16784b6c91ff8c9c852d0c.nq.gz
+│   ├── 24cf740b0fa6f8b161491e4ab0c0a1f461dc0867.nq.gz
+│   ├── 26d9f3966c19c27e5f4f4ceca6b90e3cb47c26b5.nq.gz
+│   ├── 2a04e96b2358fda1c4e8a3414a2e8e34c2df1f76.nq.gz
+│   ├── 2a69cd0dd7605fcdc14f61a46f04f2831902c1f3.nq.gz
+│   ├── 2d89e28a6bea38d95a6098d12af638b82f8f3ba7.nq.gz
+│   ├── 2f98f0199a1d5556444a5f1d3fb77e42c09ab744.nq.gz
+│   ├── 308217d22c9ad4a13e49c46009c4037122012f27.nq.gz
+│   ├── 381707de5fad63db9f3e4a6ff2f01b0571bc6b84.nq.gz
+│   ├── 3a5c5d851126baf37d04f403d86e18f1d9c8e172.nq.gz
+│   ├── 3ad1bde166954e37c48070f88995642cadf93044.nq.gz
+│   ├── 3d4bdbacec8eab5b2380aff157d7be28d793c840.nq.gz
+│   ├── 3e253879ee444e49c6ec8097d7fda5da2dadf0fa.nq.gz
+│   ├── 3e9cc1beeafc70ba54a879398b5e5063a68c3f69.nq.gz
+│   ├── 3f01cdce5a1936df1e53764099f1f4c15c229c48.nq.gz
+│   ├── 43909c9b8738b3034e310e871d8009a9714ea885.nq.gz
+│   ├── 4390dfd468504058ef86bfe41b7af80f83ad2801.nq.gz
+│   ├── 45e90fc2f4cfcbdbb4bcbcb6b930c0c3a80bcced.nq.gz
+│   ├── 4645078163f0f0fe79dec7d10f05f958dce9d33d.nq.gz
+│   ├── 4ab0e77d59803b1f5417bd4c1ca0a5335779f9bb.nq.gz
+│   ├── 4eb8bfc53b12e150ebfca68b37c54a25d74235f2.nq.gz
+│   ├── 578bef6f97f1aab811114df12726566c727fc5be.nq.gz
+│   ├── 59c0636a59de005153ec08a5522d4c7a7360aab4.nq.gz
+│   ├── 5b95549a4553f6bb838d65dfcea5d9af1f170dea.nq.gz
+│   ├── 60791d9a8e895487b9abd13e684c217b4dd2a306.nq.gz
+│   ├── 6290c89fac675385672e16e182eaf6f18ba834fe.nq.gz
+│   ├── 652b76128b6a174f3407a50fff8735896f47d863.nq.gz
+│   ├── 6716f3f019ff229ff793fd0f3b2449450b1228fc.nq.gz
+│   ├── 6957b84ad691e2a420424da3215737c29e1f16ad.nq.gz
+│   ├── 6fa54a9b24dc95c5066bfabeedd9869e59917624.nq.gz
+│   ├── 763c0c9352b6b9faca6e29337ecc378b03a47355.nq.gz
+│   ├── 7ac239ec044cd0fcafc356e1aa4175a69fcc7497.nq.gz
+│   ├── 7ebeb0f26ed2aaf52d5386f3f40c937b28c00a3f.nq.gz
+│   ├── 8011f4cbc593222f18cce7ab51bc066bcc1691f8.nq.gz
+│   ├── 8111e005fe937afaf591cd45ad501f020a50c25c.nq.gz
+│   ├── 842d938c31dfbaf54640855f1768bcbafd88da8f.nq.gz
+│   ├── 843e135d1ef16f2105283ffd3d3891d9245fece5.nq.gz
+│   ├── 864ecaff28e5fbc22d294c8ffd71eae13a68d997.nq.gz
+│   ├── 890a3fa696f40ec940615d1ab7ae34e6a72a3e6c.nq.gz
+│   ├── 8b85ccb33afa1e14b785ea9b87926a03eea7ae61.nq.gz
+│   ├── 9035b9945b65cb09d95392876130723123e50799.nq.gz
+│   ├── 92cb1d378461884456d01d634add82232231f02d.nq.gz
+│   ├── 92d4112f4de919cdbc5c7061d3219c83eb276839.nq.gz
+│   ├── 93bf0355711a8b1349f566c22510511dfa116db9.nq.gz
+│   ├── 955934be699ba024644fdb8b72725e9f64396e92.nq.gz
+│   ├── 99991cb6857f24522e2db73586b175d789a970cd.nq.gz
+│   ├── 9b6bce7db2a3812a6c0f24e8de7e663ba7f4c756.nq.gz
+│   ├── 9ff347dd3de7787f5df282e8521c772073260a8b.nq.gz
+│   ├── a568e3678fa4087f90407a84468b96f08da91be0.nq.gz
+│   ├── a6319720e38a90d9f36e905b410a987cad36349c.nq.gz
+│   ├── a63467d7d1bf6cf1f12156f8086cd71626bee9c9.nq.gz
+│   ├── ac07e44fff48375618e5c0423bbaebc5afd713b2.nq.gz
+│   ├── b16c0d55783b7ce9605bbf0683786830b26e0e57.nq.gz
+│   ├── b1d7376914fa8275ebdbb6c157ab0240d5dacafa.nq.gz
+│   ├── b4fc3756db3c6b45cde88860aacfa43e44fd3ee9.nq.gz
+│   ├── b65e8493b8988499481ca2c8d523ed48ac54cbb4.nq.gz
+│   ├── b701d2c83521d6dfcc60eb16eaf65673f585dc1b.nq.gz
+│   ├── bb9e500f6a124cf1f953a0c9d9de8e31445ba482.nq.gz
+│   ├── bc7ce9b8209d8354aadb29ac54c69347fc452227.nq.gz
+│   ├── bda4c80a2f752b98a90a772fc4d1a0c29c988927.nq.gz
+│   ├── be2c1962a5902b2a75517dfef9ee94502087ebde.nq.gz
+│   ├── be7ee0fc8a79569a283950ed2cbb04f46ca0f87f.nq.gz
+│   ├── c36a90c44db3f0ec686ed1b44dc597442d863ce1.nq.gz
+│   ├── c4ae8a47d567422c972c54fa2c3f0d1a43a9596d.nq.gz
+│   ├── c88cb65d9027157a39bed9b1c01ab149d888ca1a.nq.gz
+│   ├── c991f4ed8538e6f97d012017ba6bb2eba4fc5afb.nq.gz
+│   ├── ca27b4890d76ba9cc311df8e7b942a491468798a.nq.gz
+│   ├── ca8ddcbe59714a76a67cffb2a2ae8cecabcf4926.nq.gz
+│   ├── d3092fe367d3a5b586b9af782dd261fb991635a3.nq.gz
+│   ├── d37b954e2c0efa4d9c767fcaac0df02b6dfe7a39.nq.gz
+│   ├── d43fcd89b87ee1871ef986183803e75b97e34a5b.nq.gz
+│   ├── d56cbe949b8e3ed723a5eaf859a36bc5f46cfaf4.nq.gz
+│   ├── d658e812d93be089b2f1f4a4aae2e7a1834291b3.nq.gz
+│   ├── d7a0315e69fd97f2ccb5185501408601d0923f8d.nq.gz
+│   ├── dccce480377ad056802b16d868bf508a516bc4e1.nq.gz
+│   ├── df77cd7ada42d59d335c8c37b7548921b74b2c6c.nq.gz
+│   ├── e0d5efab56fb94577e7804603eb6f21f36977cb2.nq.gz
+│   ├── e53be0fc048bfbfa0ebf423282e791d46b2f746f.nq.gz
+│   ├── e615522eb6589f1362d201249f2eaba2d502c15e.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e9042a45927a52b7386041797847ff5ac3c8bac8.nq.gz
+│   ├── e9dffbf17f96a7c45686268ef8cc9ddd013c986c.nq.gz
+│   ├── f5c656276ed86233b7f89888c98c5c32b9fc2907.nq.gz
+│   ├── f62dffdb093e983fb7de00fa48d56f2bb2e03725.nq.gz
+│   ├── f67359fdb1d5776f1dfc51463ffd7e0172fedcea.nq.gz
+│   ├── fa13531f950827b11dd3dbb294a835d960f1ca9d.nq.gz
+│   ├── fb64666680a1b9c03b84be84e346b83a6a6771e3.nq.gz
+│   ├── fc7401b8cbc9b1506f33f6c8c3dd6c357693b10b.nq.gz
+│   ├── fcb4404a1247f6d0397e1b33d58e15c12d914622.nq.gz
+│   ├── fd9c50f92b4b44a8c2da2b3dd2b1ec7c68977f81.nq.gz
+│   └── fed9e24a2cdefebb7558d263fd5d07de50bc6ed9.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 2c0b550cd70820b58d909fd3b1a57093c196317e.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 115 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[jazzband/sorl-thumbnail](https://github.com/jazzband/sorl-thumbnail)
+
+---
+*Parsed on 2026-10-10 by [repolex](https://repolex.ai)*
