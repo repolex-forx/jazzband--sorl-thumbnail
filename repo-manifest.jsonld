@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/jazzband/sorl-thumbnail/commit/2c0b550cd70820b58d909fd3b1a57093c196317e",
       "git:hexsha": "2c0b550cd70820b58d909fd3b1a57093c196317e",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-10-10T19:44:14.650590+00:00"
     },
     {
       "@id": "https://repolex.ai/r/jazzband/sorl-thumbnail/commit/16dcfc8395bb0cb96289a21f5c2ca719db1e5852",
